@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="/assets/style.scss" />
+        <title>personal blog</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="header-container">
+                <div class="logo">NORDIC ROSE</div>
+                <div class="menu">
+                    <ul>
+                        <a href="#">
+                            <li>Home</li>
+                        </a>
+                        <a href="#">
+                            <li>About</li>
+                        </a>
+                        <a href="#">
+                            <li>Contact</li>
+                        </a>
+                        <a href="#">
+                            <li>Projects</li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+            <div class="header-hr"></div>
+            <div class="first-post">
+                <img
+                    class="first-post-img"
+                    src="/images/enable-focus-mode-gregorian-chant.gif"
+                    alt="first post"
+                />
+                <div class="first-post-text">
+                    <h1>
+                        Enable your focus mode by immersive Gregorian chants
+                        from the 17th century
+                    </h1>
+                    <p>
+                        At some point, all instrumental music aiming for
+                        increasing focus starts to feel tedious. Classical
+                        piano, mellow beats, electronic music in general, even
+                        the Tibetan bowls, white noise and binaural beats become
+                        numb.
+                    </p>
+                </div>
+            </div>
+            <div class="hr"></div>
+            <div class="all-articles">
+                <h2>All Articles</h2>
+                <div class="articles">
+                    <% posts.forEach(function(post){ %> <%-
+                    include('layouts/post',{post})%> <% }); %>
+                </div>
+            </div>
+            <%- include('layouts/footer','')%>
+        </div>
+    </body>
+</html>

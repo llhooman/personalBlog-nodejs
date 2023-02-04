@@ -1,0 +1,148 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+ul {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+}
+p {
+    line-height: 35px;
+}
+body {
+}
+.container {
+    margin: 0 auto;
+}
+/* header starts here */
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 80px;
+}
+.menu ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menu ul a {
+    margin-left: 20px;
+    color: black;
+    cursor: pointer;
+    font-size: 25px;
+    padding: 10px 5px 0 10px;
+}
+.logo {
+    color: black;
+    font-size: 40px;
+}
+.header-hr {
+    border-bottom: 2px solid gray;
+    width: 80vw;
+    margin: 0 auto;
+}
+/* header ends here */
+
+/* first post starts here*/
+.first-post {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 70px;
+}
+.first-post img {
+    width: 60vw;
+    height: 60vh;
+    object-fit: cover;
+}
+.first-post-text {
+    width: 40vw;
+    padding: 20px;
+    text-align: center;
+}
+.first-post-text p {
+    font-size: 20px;
+    padding-top: 20px;
+}
+/* first post ends here*/
+.hr {
+    border: 1px solid #000000;
+    margin: 0 auto;
+    width: 70%;
+}
+/* all articles section starts here*/
+.all-articles {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.all-articles h2 {
+    margin-top: 50px;
+    font-weight: 700;
+    font-size: 44px;
+    padding-bottom: 50px;
+}
+.articles {
+    display: grid;
+    column-gap: 50px;
+    row-gap: 70px;
+    grid-template-columns: 1fr 1fr;
+}
+.articles .post {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.articles .post img {
+    width: 300px;
+}
+.articles .post h3 {
+    width: 200px;
+    text-align: center;
+}
+
+/* all articles section ends here*/
+.footer {
+    height: 500px;
+    background-color: #000000;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.footer .logo {
+    color: white;
+    text-align: center;
+    margin-top: 50px;
+}
+.footer .logo h2 {
+    font-size: 48px;
+    color: white;
+}
+.footer .logo p {
+    font-size: 16px;
+    width: 450px;
+}
+.footer .links {
+    padding-top: 50px;
+}
+.footer .links a {
+    margin: 50px;
+    padding: 10px 30px;
+    color: white;
+    cursor: pointer;
+    border-bottom: 1px solid white;
+}
+.copyright p {
+    margin-top: 70%;
+    color: white;
+}
